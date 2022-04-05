@@ -35,28 +35,39 @@
   <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="logo">
-        <span class="font-title" style="width: 100px; text-align: center;">Finger Trip</span>
-      </a>
-    </div>
-    <nav class="nav">
-      <ul class="gnb">
-        <li class="font-title">About</li>
-        <li class="font-title">Feature</li>
-        <li class="font-title">Explore</li>
-        <li class="font-title">Support</li>
-      </ul>
-    </nav>
-    <div class="btn-join">
-      <button type="button" class="btn btn-outline-primary">Log in</button>
-      <button type="button" class="btn btn-primary">Register</button>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="logo">
+          <span class="font-title" style="width: 100px; text-align: center;">Finger Trip</span>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="gnb">
+          <li class="font-title">About</li>
+          <li class="font-title">Feature</li>
+          <li class="font-title">Explore</li>
+          <li class="font-title">Support</li>
+        </ul>
+      </nav>
+      <div class="btn-join">
+        <button type="button" class="btn btn-outline-primary">Log in</button>
+        <button type="button" class="btn btn-primary">Register</button>
+      </div>
     </div>
   </header>
   <main class="main">
-    <section class="youtube"></section>
+    <section class="intro">
+      <div class="content-left">
+        <p>Share your trip course,<br>Get travel information!</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search favorite place..." aria-label="Search favorite place..." aria-describedby="button-addon2">
+          <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
+      <div class="content-right"></div>
+    </section>
     <section class="slider"></section>
     <section class="list"></section>
     <section class="guide"></section>

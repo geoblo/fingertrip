@@ -1,3 +1,9 @@
+/* 헤더 */
+header {
+  position: fixed;
+  width: 100%;
+}
+
 .header {
   max-width: 1680px;
   height: 60px;
@@ -7,24 +13,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
-}
-
-.font-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: -0.015em;
-  color: #0d6efd;
-}
-
-button {
-  width: 130px;
-  height: 40px;
-}
-
-button + button {
-  margin-left: 20px;
 }
 
 .header > .logo > a {
@@ -42,16 +30,60 @@ button + button {
   justify-content: space-evenly;
 }
 
+/* 메인 */
 .main {
   max-width: 1680px;
-  height: 100vh;
   margin: 0 auto;
-  background: palevioletred;
+  padding-top: 60px;
 }
 
+.intro {
+  height: 600px;
+  background: rgba(0, 0, 0, 0.97);
+
+  display: flex;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.intro > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 푸터 */
 .footer {
   max-width: 1680px;
   height: 500px;
   margin: 0 auto;
   background: olivedrab;
+}
+
+/* 공통 스타일 */
+.font-title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: #0d6efd;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+}
+
+button + button {
+  margin-left: 20px;
+}
+
+.content-left, .content-right {
+  flex: 1;
 }
