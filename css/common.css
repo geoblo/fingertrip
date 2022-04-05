@@ -1,0 +1,57 @@
+.header {
+  max-width: 1680px;
+  height: 60px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.font-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: #0d6efd;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+}
+
+button + button {
+  margin-left: 20px;
+}
+
+.header > .logo > a {
+  display: flex;
+  align-items: center;
+}
+
+.header > .nav {
+  display: unset;
+  width: calc(100% - 433.2px);
+}
+
+.header > .nav > ul.gnb {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main {
+  max-width: 1680px;
+  height: 100vh;
+  margin: 0 auto;
+  background: palevioletred;
+}
+
+.footer {
+  max-width: 1680px;
+  height: 500px;
+  margin: 0 auto;
+  background: olivedrab;
+}
