@@ -1,0 +1,45 @@
+/* 메인 */
+.main {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+/* 섹션1: 인트로 */
+.intro {
+  height: 600px;
+  background: rgba(0, 0, 0, 0.97);
+
+  display: flex;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.intro > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 섹션2: 슬라이더 */
+.slider {
+  height: 600px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
