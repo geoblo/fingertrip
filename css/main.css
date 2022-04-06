@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 메인 */
 .main {
   max-width: 1680px;
@@ -41,5 +43,36 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
+
+/* 섹션3: 리스트 */
+.course-list {
+  height: 800px;
+  background: #F5F5F5;
+}
+
+.course-list > p {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 80px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.course-list > div.container div.row {
+  row-gap: 30px;
+}
+
+.course-list > div.container div.col {
+  height: 250px;
+}
+
+.course-list > div.container div.col > div:first-child {
+  cursor: pointer;
+}
+
+/* .course-list > div.container div.col > div:last-child {
+  height: 100%;
+} */
