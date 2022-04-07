@@ -29,6 +29,7 @@
   display: unset;
   width: calc(100% - 433.2px);
   height: 100%;
+  color: #0d6efd;
 }
 
 .header-container > .nav > ul.gnb {
@@ -78,15 +79,81 @@
   /* max-width: 1680px; */
   height: 500px;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer > .menu-container {
+  max-width: 1680px;
+  width: 100%;
+  height: 192px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 80px;
+}
+
+.footer > .menu-container > .menu-left, 
+.footer > .menu-container > .menu-right {
+  flex: 3;
+  padding-bottom: 48px;
+}
+
+.footer > .menu-container > .logo {
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+.footer > .menu-container > .logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > .menu-container > .menu-left > ul {
+  display: flex;
+  text-align: left;
+}
+
+.footer > .menu-container > .menu-right > ul {
+  display: flex;
+  text-align: right;
+}
+
+.footer > .menu-container > .menu-left > ul > li, 
+.footer > .menu-container > .menu-right > ul > li {
+  flex: 1;
+}
+
+.footer > .divider {
+  max-width: 1680px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.footer > .divider > hr {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer > .sns-container {
+  max-width: 1680px;
+  width: 100%;
+  height: 307px;
+  padding: 0 80px;
 }
 
 /* 공통 스타일 */
+.color-blue {
+  color: #0d6efd;
+}
+
 .font-menu {
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.015em;
-  color: #0d6efd;
 }
 
 .font-title {
