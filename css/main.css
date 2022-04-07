@@ -10,15 +10,14 @@
 /* 섹션1: 인트로 */
 .intro {
   height: 600px;
-  background: rgba(0, 0, 0, 0.97);
-
   display: flex;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.97);
 }
 
 .intro-container {
-  width: 1680px;
   /* max-width: 1680px; */
+  width: 1680px;
   display: flex;
 
   font-weight: 700;
@@ -56,7 +55,10 @@
 
 /* 섹션3: 리스트 */
 .course-list {
-  height: 800px;
+  /* 반응형에 따라 콘텐츠 리스트의 로우가 늘어나므로 고정 높이를 주면 안됨 */
+  /* height: 800px; */
+  /* 패딩 값으로 높이 해결 */
+  padding-bottom: 90px;
   background: #F5F5F5;
 }
 
@@ -86,4 +88,69 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* 섹션4: 가이드 */
+.guide {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-container {
+  width: 1680px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.guide-container img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+}
+
+.guide-container > .content-left,
+.guide-container > .content-right {
+  display: flex;
+  justify-content: center;
+}
+
+.guide-container > .content-right > .description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+/* 섹션5: 기능 */
+.feature {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.feature-container {
+  width: 1680px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.feature-container img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+}
+
+.feature-container > .content-left,
+.feature-container > .content-right {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-container > .content-left > .description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
