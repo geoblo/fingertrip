@@ -81,6 +81,9 @@
   cursor: pointer;
 }
 
-/* .course-list > div.container div.col > div:last-child {
-  height: 100%;
-} */
+.course-list > div.container div.col:last-child > div:first-child {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
