@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
 /* 헤더 */
-header {
+.header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  background: white;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.header {
+.header-container {
   max-width: 1680px;
   height: 60px;
   margin: 0 auto;
@@ -17,33 +18,32 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
-  background: white;
 }
 
-.header > .logo > a {
+.header-container > .logo > a {
   display: flex;
   align-items: center;
 }
 
-.header > .nav {
+.header-container > .nav {
   display: unset;
   width: calc(100% - 433.2px);
   height: 100%;
 }
 
-.header > .nav > ul.gnb {
+.header-container > .nav > ul.gnb {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.header > .nav > ul.gnb > li {
+.header-container > .nav > ul.gnb > li {
   height: 100%;
   line-height: 60px;
 }
 
-.header > .nav > ul.gnb ul.lnb {
+.header-container > .nav > ul.gnb ul.lnb {
   height: 200px;
   top: 80%;
   left: -10px;
@@ -59,23 +59,23 @@ header {
   padding: 5px 0;
 }
 
-.header > .nav > ul.gnb > li:hover > .lnb {
+.header-container > .nav > ul.gnb > li:hover > .lnb {
   display: block;
 }
 
-.header > .nav ul.lnb > li {
+.header-container > .nav ul.lnb > li {
   height: 47.5px;
   line-height: 47.5px;
   padding-left: 10px;
 }
 
-.header > .nav ul.lnb > li:hover {
+.header-container > .nav ul.lnb > li:hover {
   background: #8ebbff;
 }
 
 /* 푸터 */
 .footer {
-  max-width: 1680px;
+  /* max-width: 1680px; */
   height: 500px;
   margin: 0 auto;
   background: olivedrab;
