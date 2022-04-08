@@ -20,6 +20,10 @@
   padding: 0 80px;
 }
 
+.header-container > .hamburger {
+  display: none;
+}
+
 .header-container > .logo > a {
   display: flex;
   align-items: center;
@@ -222,4 +226,57 @@ button + button {
 
 .content-left, .content-right {
   flex: 1;
+}
+
+/* 0 ~ 767 : 모바일 */
+@media screen and (max-width: 767px) {
+  .header-container {
+    height: 48px;
+    padding: 0 20px;
+  }
+
+  .header-container > .hamburger {
+    display: block;
+  }
+
+  .header-container > .logo img {
+    width: 40px;
+  }
+
+  .header-container > .logo span {
+    display: none;
+  }
+
+  .header-container > .nav {
+    display: none;
+  }
+
+  .header-container > .btn-join > button:first-child {
+    display: none;
+  }
+
+  .header-container > .btn-join > button:last-child {
+    width: 100px;
+    height: 36px;
+  }
+}
+
+/* 768 ~ 1023 : 태블릿 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .header-container > .hamburger {
+    display: block;
+  }
+
+  .header-container > .nav {
+    display: none;
+  }
+}
+
+/* 1024 이상 : 데스크탑 */
+@media screen and (min-width: 1024px) {
+
 }
