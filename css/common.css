@@ -44,6 +44,10 @@
   line-height: 60px;
 }
 
+.header-container > .nav > ul.gnb > li > a {
+  display: block;
+}
+
 .header-container > .nav > ul.gnb ul.lnb {
   height: 200px;
   top: 80%;
@@ -68,6 +72,10 @@
   height: 47.5px;
   line-height: 47.5px;
   padding-left: 10px;
+}
+
+.header-container > .nav ul.lnb > li > a {
+  display: block;
 }
 
 .header-container > .nav ul.lnb > li:hover {
