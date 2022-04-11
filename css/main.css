@@ -171,3 +171,21 @@
   flex-direction: column;
   row-gap: 24px;
 }
+
+/* 0 ~ 767 : 모바일 */
+@media screen and (max-width: 767px) {
+  /* 메인 */
+  .main {
+    padding-top: 48px;
+  }
+}
+
+/* 768 ~ 1023 : 태블릿 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* 1024 이상 : 데스크탑 */
+@media screen and (min-width: 1024px) {
+
+}

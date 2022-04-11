@@ -22,6 +22,7 @@
 
 .header-container > .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .header-container > .logo > a {
@@ -230,6 +231,7 @@ button + button {
 
 /* 0 ~ 767 : 모바일 */
 @media screen and (max-width: 767px) {
+  /* 헤더 */
   .header-container {
     height: 48px;
     padding: 0 20px;
@@ -237,6 +239,10 @@ button + button {
 
   .header-container > .hamburger {
     display: block;
+  }
+
+  .header-container > .hamburger > i {
+    font-size: 1.5em;
   }
 
   .header-container > .logo img {
@@ -263,6 +269,7 @@ button + button {
 
 /* 768 ~ 1023 : 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* 헤더 */
   .header-container {
     padding: 0 20px;
   }
