@@ -99,6 +99,11 @@
   align-items: center;
 }
 
+.course-list i {
+  width: 16px;
+  text-align: center;
+}
+
 .course-list > .btn-container {
   display: none;
   text-align: center;

@@ -233,6 +233,12 @@ button + button {
   flex: 1;
 }
 
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* 0 ~ 767 : 모바일 */
 @media screen and (max-width: 767px) {
   /* 헤더 */
