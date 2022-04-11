@@ -199,6 +199,20 @@
   .course-list > .btn-container {
     display: block;
   }
+
+  .guide, .feature {
+    height: 400px;
+  }
+
+  .guide-container,
+  .feature-container {
+    padding: 0 40px;
+  }
+
+  .guide-container > .content-left,
+  .feature-container > .content-right {
+    display: none;
+  }
 }
 
 /* 768 ~ 1023 : 태블릿 */
