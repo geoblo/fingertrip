@@ -137,6 +137,10 @@
 .footer > .menu-container > .menu-left > ul > li, 
 .footer > .menu-container > .menu-right > ul > li {
   flex: 1;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer > .divider {
@@ -265,6 +269,36 @@ button + button {
     width: 100px;
     height: 36px;
   }
+
+  /* 푸터 */
+  .footer > .menu-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer > .menu-container > .menu-left, 
+  .footer > .menu-container > .menu-right {
+    width: 100%;
+    flex: 1;
+    padding-bottom: 0;
+  }
+
+  .footer > .menu-container > .logo {
+    padding-bottom: 0;  
+  }
+
+  .footer > .menu-container > .logo > a {
+    height: 100%;
+  }
+
+  .footer > .menu-container > .menu-left > ul,
+  .footer > .menu-container > .menu-right > ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /* 768 ~ 1023 : 태블릿 */
@@ -281,6 +315,37 @@ button + button {
   .header-container > .nav {
     display: none;
   }
+
+  /* 푸터 */
+  .footer > .menu-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer > .menu-container > .menu-left, 
+  .footer > .menu-container > .menu-right {
+    width: 100%;
+    flex: 1;
+    padding-bottom: 0;
+  }
+
+  .footer > .menu-container > .logo {
+    padding-bottom: 0;  
+  }
+
+  .footer > .menu-container > .logo > a {
+    height: 100%;
+  }
+
+  .footer > .menu-container > .menu-left > ul,
+  .footer > .menu-container > .menu-right > ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 /* 1024 이상 : 데스크탑 */
