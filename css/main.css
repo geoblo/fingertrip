@@ -187,6 +187,11 @@
     display: none;
   }
 
+  /* 섹션2: 슬라이더 */
+  .slider {
+    height: 400px;
+  }
+
   /* 섹션3: 리스트 */
   .course-list {
     padding-bottom: 50px;

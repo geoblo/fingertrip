@@ -272,6 +272,7 @@ button + button {
 
   /* 푸터 */
   .footer > .menu-container {
+    height: 307px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
