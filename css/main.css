@@ -70,12 +70,13 @@
   line-height: 80px;
   letter-spacing: -0.015em;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 40px;
 }
 
 .course-list img {
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .course-list > div.container div.row {
@@ -83,28 +84,24 @@
 }
 
 .course-list > div.container div.col {
-  /* height: 250px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .course-list > div.container div.col > div:first-child {
-  /* width: 100%; */
-  /* flex: 4; */
   cursor: pointer;
 }
 
-.course-list > div.container div.col > div:last-child {
-  /* flex: 1; */
-  /* align-self: flex-start; */
-}
-
 .course-list > div.container div.col:last-child > div:first-child {
-  height: 80%;
+  height: 86.5%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.course-list > .btn-container {
+  display: none;
+  text-align: center;
 }
 
 /* 섹션4: 가이드 */
@@ -188,6 +185,19 @@
 
   .intro > .intro-container > div.content-right {
     display: none;
+  }
+
+  /* 섹션3: 리스트 */
+  .course-list {
+    padding-bottom: 50px;
+  }
+
+  .course-list > div.container div.col:nth-child(4) ~ div.col {
+    display: none;
+  }
+
+  .course-list > .btn-container {
+    display: block;
   }
 }
 
