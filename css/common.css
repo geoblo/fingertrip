@@ -80,7 +80,6 @@
   padding: 5px 0;
 }
 
-/* JS로 처리하여 주석처리 함 */
 .header-container > .nav > ul.gnb > li:hover > .lnb {
   display: block;
 }
@@ -439,6 +438,10 @@ button + button {
 /* 1024 이상 : 데스크탑 */
 @media screen and (min-width: 1024px) {
   .header-container > .nav {
+    display: block !important;
+  }
+
+  .header-container > .nav > ul.gnb > li:hover > .lnb {
     display: block !important;
   }
 }

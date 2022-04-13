@@ -27,11 +27,4 @@ $(function() {
   $("li.dropdown").click(() => {
     $(this).find("ul.lnb").toggle();
   });
-  
-  // $("li.dropdown").mouseover(() => {
-  //   $(this).find("ul.lnb").show();
-  // });
-  // $("li.dropdown").mouseout(() => {
-  //   $(this).find("ul.lnb").hide();
-  // });
 });
