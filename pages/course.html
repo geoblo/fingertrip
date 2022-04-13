@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finger Trip</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/course.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="hamburger color-blue">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </div>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../img/logo.svg" alt="logo">
+          <span class="font-menu color-blue" style="width: 100px; text-align: center;">Finger Trip</span>
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="close">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+        <ul class="gnb">
+          <li class="font-menu">
+            <a href="#about">About</a>
+          </li>
+          <li class="font-menu">
+            <a href="#feature">Feature</a>
+          </li>
+          <li class="font-menu dropdown">
+            <a class="dropdown-toggle" href="#">Explore</a>
+            <ul class="lnb">
+              <li class="font-menu">
+                <a href="#">Show All</a>
+              </li>
+              <li class="font-menu">
+                <a href="#new">New Course</a>
+              </li>
+              <li class="font-menu">
+                <a href="#best">Best Course</a>
+              </li>
+              <li class="font-menu">
+                <a href="#">My Course</a>
+              </li>
+            </ul>
+          </li>
+          <li class="font-menu">
+            <a href="#support">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn-join">
+        <button type="button" class="btn btn-outline-primary btn-size-fixed">Log in</button>
+        <button type="button" class="btn btn-primary btn-size-fixed">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="map-container">
+      <div id="map" style="height: 100%;">
+    </section>
+    </div>
+    <section class="form-container">
+    </section>
+  </main>
+
+  <footer class="footer" id="support">
+    <div class="menu-container">
+      <nav class="menu-left">
+        <ul>
+          <li class="font-menu">
+            <a href="#">회사소개</a>
+          </li>
+          <li class="font-menu">
+            <a href="#">인재채용</a>
+          </li>
+          <li class="font-menu">
+            <a href="#">제휴제안</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../img/logo.svg" alt="logo">
+          <span class="font-menu" style="width: 100px; text-align: center;">Finger Trip</span>
+        </a>
+      </div>
+      <nav class="menu-right">
+        <ul>
+          <li class="font-menu">
+            <a href="#">이용약관</a>
+          </li>
+          <li class="font-menu">
+            <a href="#">고객센터</a>
+          </li>
+          <li class="font-menu">
+            <a href="#">개인정보처리방침</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="divider">
+      <hr>
+    </div>
+    <div class="sns-container">
+      <ul class="sns-list">
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="../img/sns/youtube.svg" alt="youtube">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/goni_kim_goni" target="_blank">
+            <img src="../img/sns/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/gonikimgoni" target="_blank">
+            <img src="../img/sns/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cyworld.com/cyworld/welcome" target="_blank">
+            <img src="../img/sns/cyworld.svg" alt="cyworld">
+          </a>
+        </li>
+      </ul>
+      <p class="font-copyright" style="margin-top: 40px;">
+        &copy; 2022.
+        <a href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
+          <strong data-bs-toggle="tooltip" data-bs-placement="top" title="궁금하면 클릭!">KIM JAE HYUN.</strong>
+        </a>
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal (Profile) -->
+  <!-- 공통으로 빼고 include 할 수 있는 방법? -->
+  <div class="modal fade" id="profileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="profileModalLabel">개발자 소개</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body" style="display: flex;">
+          <img src="../img/profile.jpg" alt="profile" width="222" height="300">
+          <div style="margin-left: 10px;">
+            <p>이름: 김재현</p>
+            <br>
+            <p>나이: 37</p>
+            <br>
+            <p>취미: 스노우보드, 배드민턴 등</p>
+            <br>
+            <p>
+              주요 경력:<br>
+              Java Android Framework 개발<br><br>
+              Java + Spring 웹 개발<br>
+              RDBMS 사용<br><br>
+              JS 웹 개발 (Node.js, React 등)<br>
+              RDB + NoSQL DB 사용<br><br>
+              AWS 클라우드 사용
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">멋지시네요</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">동안이네요</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1442067601.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../lib/jquery-3.6.0.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiQeLqxpO0jPYhvTwbzAzPxYxtm6UQobA&callback=initMap&libraries=places&v=weekly" async></script>
+</body>
+</html>
