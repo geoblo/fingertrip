@@ -16,4 +16,14 @@ $(function() {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // ScrollReveal
+  let slide = {
+    distance: '150%',
+    duration: 800,
+    reset: true
+  };
+  
+  ScrollReveal().reveal('.slide-left', { ...slide, origin: 'left' });
+  ScrollReveal().reveal('.slide-right', { ...slide, origin: 'right' });
 });
