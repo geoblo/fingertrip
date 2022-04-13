@@ -23,7 +23,17 @@ $(function() {
     duration: 800,
     reset: true
   };
+
+  let spotlight = {
+    distance: '0px',
+    opacity: 0.2,
+    duration: 1200,
+    reset: true
+  }
   
+  ScrollReveal().reveal('.slide-up', { ...slide, origin: 'bottom' });
+  ScrollReveal().reveal('.slide-down', { ...slide, origin: 'top' });
   ScrollReveal().reveal('.slide-left', { ...slide, origin: 'left' });
   ScrollReveal().reveal('.slide-right', { ...slide, origin: 'right' });
+  ScrollReveal().reveal('.spotlight', spotlight);
 });
