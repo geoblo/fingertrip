@@ -65,3 +65,7 @@ a {
 hr {
 	margin: 0;
 }
+
+main {
+	overflow: hidden;
+}
