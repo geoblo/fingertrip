@@ -79,6 +79,10 @@
   object-fit: contain;
 }
 
+.course-list img:hover {
+  transform: scale(1.05);
+}
+
 .course-list > div.container div.row {
   row-gap: 30px;
 }
