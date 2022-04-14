@@ -2,6 +2,10 @@ let map;
 let service;
 let infoWindow;
 let markers = [];
+let $rateYo = $("#placeRating").rateYo({
+  rating: 0,
+  readOnly: true
+});;
 
 function initMap() {
   const incheon = new google.maps.LatLng( 37.45639, 126.70528);
@@ -15,7 +19,7 @@ function initMap() {
 
   // 맵에 클릭 이벤트 리스너 등록
   map.addListener("click", (event) => {
-    console.log(event);
+    // console.log(event);
     addMarker(event.latLng);
 
     // 장소 정보
@@ -33,6 +37,15 @@ function initMap() {
       ) {
         console.log(status);
         console.log(place);
+
+        const placeNmEl = document.getElementById("placeNm");
+        const placeAddrEl = document.getElementById("placeAddr");
+        const placePhotoEl = document.getElementById("placePhoto");
+        
+        placeNmEl.value = place.name;
+        placeAddrEl.value = place.formatted_address;
+        $rateYo.rateYo("rating", place.rating || 0);
+        placePhotoEl.setAttribute("src", place.photos && place.photos[0].getUrl() || "https://svgshare.com/i/AY2.svg");
 
         // const marker = new google.maps.Marker({
         //   map,

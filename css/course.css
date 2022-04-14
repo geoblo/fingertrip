@@ -8,9 +8,10 @@
 }
 
 /* 서브 페이지 */
+/* 구글맵 영역 */
 .map-container {
   height: 600px;
-  padding: 40px 80px;
+  padding: 20px 80px;
 }
 
 .custom-map-control-button {
@@ -29,4 +30,9 @@
 
 .custom-map-control-button:hover {
   background: #ebebeb;
+}
+
+/* 입력 영역 */
+.form-container {
+  padding: 5px 80px;
 }
