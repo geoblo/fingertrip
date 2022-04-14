@@ -115,13 +115,17 @@
         <div class="content-right" style="margin-left: 15px;">
           <div class="mb-3">
             <label for="placePhoto" class="form-label">사진</label>
-            <img src="https://svgshare.com/i/AY2.svg" alt="장소 사진" id="placePhoto" width="100%"height="330" style="display: block;">
+            <img src="https://svgshare.com/i/AY2.svg" alt="장소 사진" id="placePhoto" width="100%"height="330" style="display: block; object-fit: contain;">
           </div>
         </div>
       </div>
       <div class="mb-3">
         <label for="placeMemo" class="form-label">메모</label>
         <textarea class="form-control" id="placeMemo" rows="3" placeholder="여행지에 대한 간단한 메모를 남기세요."></textarea>
+      </div>
+      <div class="mb-3 pt-5" style="text-align: right;">
+        <button type="button" class="btn btn-outline-danger btn-size-fixed">취소</button>
+        <button type="button" class="btn btn-primary btn-size-fixed">저장</button>
       </div>
     </section>
   </main>

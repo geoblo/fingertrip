@@ -36,4 +36,9 @@ $(function() {
   ScrollReveal().reveal('.slide-left', { ...slide, origin: 'left' });
   ScrollReveal().reveal('.slide-right', { ...slide, origin: 'right' });
   ScrollReveal().reveal('.spotlight', spotlight);
+
+  // Let's Finger 버튼 클릭 이벤트
+  $('.btn-new-course').click(() => {
+    location.href = "/pages/course.html";
+  });
 });
