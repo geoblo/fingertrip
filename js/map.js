@@ -8,7 +8,7 @@ let $rateYo = $("#placeRating").rateYo({
 });;
 
 function initMap() {
-  const incheon = new google.maps.LatLng( 37.45639, 126.70528);
+  const incheon = new google.maps.LatLng(37.45639, 126.70528);
   map = new google.maps.Map(document.getElementById("map"), {
     center: incheon,
     zoom: 15,

@@ -10,7 +10,7 @@
 /* 서브 페이지 */
 /* 구글맵 영역 */
 .map-container {
-  height: 600px;
+  height: 450px;
   padding: 20px 80px;
 }
 
@@ -21,7 +21,7 @@
   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
   margin: 10px;
   padding: 0 0.5em;
-  /* font: 400 18px Roboto, Arial, sans-serif; */
+  font: 400 18px Roboto, Arial, sans-serif;
   font: 400 18px;
   overflow: hidden;
   height: 40px;
@@ -34,5 +34,5 @@
 
 /* 입력 영역 */
 .form-container {
-  padding: 5px 80px;
+  padding: 0 80px;
 }
