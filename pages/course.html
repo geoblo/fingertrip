@@ -85,20 +85,34 @@
         </ul>
       </nav>
       <div class="btn-join">
-        <button type="button" class="btn btn-outline-primary btn-size-fixed">Log in</button>
-        <button type="button" class="btn btn-primary btn-size-fixed">Register</button>
+        <span><strong>김재현</strong>님 환영합니다!</span>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="map-container">
-      <div id="map" style="height: 100%;">
-    </section>
+    <div class="mb-3 pt-3">
+      <label for="tripTitle" class="form-label">여행 타이틀</label>
+      <input type="text" class="form-control" id="tripTitle">
     </div>
+    <div class="mb-3" style="display: flex; justify-content: space-between;">
+      <button type="button" class="btn btn-outline-success btn-size-fixed" onclick="addPlace()">+ 여행지 추가</button>
+      <div>
+        <button type="button" class="btn btn-outline-danger btn-size-fixed">취소</button>
+        <button type="button" class="btn btn-primary btn-size-fixed" onclick="saveTrip()">최종 저장</button>
+      </div>
+    </div>
+    <section class="map-container">
+      <div class="content-left" style="margin-right: 10px;">
+        <div id="map" style="height: 100%;"></div>
+      </div>
+      <div class="content-right" style="margin-left: 10px;">
+        <div id="mapOverview" style="height: 100%;"></div>
+      </div>
+    </section>
     <section class="form-container">
       <div style="display: flex;">
-        <div class="content-left" style="margin-right: 15px;">
+        <div class="content-left" style="margin-right: 10px;">
           <div class="mb-3">
             <label for="placeNm" class="form-label">장소명</label>
             <input type="text" class="form-control" id="placeNm" readonly>
@@ -112,20 +126,16 @@
             <div class="place-rating" id="placeRating"></div>
           </div>
         </div>
-        <div class="content-right" style="margin-left: 15px;">
+        <div class="content-right" style="margin-left: 10px;">
           <div class="mb-3">
             <label for="placePhoto" class="form-label">사진</label>
-            <img src="https://svgshare.com/i/AY2.svg" alt="장소 사진" id="placePhoto" width="100%"height="330" style="display: block; object-fit: contain;">
+            <img src="https://svgshare.com/i/AY2.svg" alt="장소 사진" id="placePhoto" width="100%" height="330" style="display: block; object-fit: contain;">
           </div>
         </div>
       </div>
       <div class="mb-3">
         <label for="placeMemo" class="form-label">메모</label>
         <textarea class="form-control" id="placeMemo" rows="3" placeholder="여행지에 대한 간단한 메모를 남기세요."></textarea>
-      </div>
-      <div class="mb-3 pt-5" style="text-align: right;">
-        <button type="button" class="btn btn-outline-danger btn-size-fixed">취소</button>
-        <button type="button" class="btn btn-primary btn-size-fixed">저장</button>
       </div>
     </section>
   </main>
@@ -246,6 +256,6 @@
   <script src="../lib/rateyo/jquery.rateyo.min.js"></script>
   <script src="../js/common.js"></script>
   <script src="../js/map.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiQeLqxpO0jPYhvTwbzAzPxYxtm6UQobA&callback=initMap&libraries=places&v=weekly" async></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiQeLqxpO0jPYhvTwbzAzPxYxtm6UQobA&libraries=places&callback=initMap&v=weekly" async></script>
 </body>
 </html>

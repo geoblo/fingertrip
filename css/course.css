@@ -4,14 +4,14 @@
 .main {
   /* max-width: 1680px; */
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 80px;
 }
 
 /* 서브 페이지 */
 /* 구글맵 영역 */
 .map-container {
   height: 450px;
-  padding: 20px 80px;
+  display: flex;
 }
 
 .custom-map-control-button {
@@ -34,5 +34,5 @@
 
 /* 입력 영역 */
 .form-container {
-  padding: 0 80px;
+  padding-top: 20px;
 }
