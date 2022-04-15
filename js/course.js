@@ -322,6 +322,8 @@ function saveTrip() {
     console.log(tripData);
 
     localStorage.setItem("tripData", JSON.stringify(tripData));
+
+    location.href = "/pages/list.html";
   } else {
     alert("Sorry! No Web Storage support..");
   }
