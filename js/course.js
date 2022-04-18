@@ -196,8 +196,8 @@ function getAddressInformation(request) {
         window.alert('No results found');
       }
     } else {
-      //alert('Geocode was not successful for the following reason: ' + status);
-        
+      // alert('Geocode was not successful for the following reason: ' + status);
+
       // 이상한 바다 한가운데 아무런 정보도 없는곳 찍었을 때 null값 들어가는 에러 해결
       placeNmEl.value = "정보 없음";
       placeAddrEl.value = "정보 없음";
@@ -310,20 +310,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
-
-// function createMarker(place) {
-//   if (!place.geometry || !place.geometry.location) return;
-
-//   const marker = new google.maps.Marker({
-//     map,
-//     position: place.geometry.location,
-//   });
-
-//   google.maps.event.addListener(marker, "click", () => {
-//     infoWindow.setContent(place.name || "");
-//     infoWindow.open(map);
-//   });
-// }
 
 function saveTrip() {
   if (typeof(Storage) !== "undefined") {
