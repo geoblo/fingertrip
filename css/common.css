@@ -333,6 +333,11 @@ button + button {
     display: none;
   }
 
+  .header-container > .nav > ul.gnb > li,
+  .header-container > .nav ul.lnb > li {
+    width: 100%;
+  }
+
   .header-container > .btn-join > button:first-child {
     display: none;
   }
