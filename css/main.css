@@ -11,6 +11,7 @@
 .intro {
   /* 반응형에서 flex 방향을 column으로 바꾸게 되면 지정된 높이를 벗어나 min-으로 바꿔줌 */
   min-height: 600px;
+  max-height: 600px;
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.97);
@@ -229,6 +230,12 @@
 /* 768 ~ 1023 : 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* 섹션1: 인트로 */
+  .intro > .intro-container > div.content-left {
+    background: url("/img/intro/intro.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .intro-container {
     flex-direction: column-reverse;
   }
