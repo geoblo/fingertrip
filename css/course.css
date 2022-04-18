@@ -10,7 +10,7 @@
 /* 서브 페이지 */
 /* 구글맵 영역 */
 .map-container {
-  height: 450px;
+  height: 440px;
   display: flex;
 }
 

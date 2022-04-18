@@ -93,10 +93,6 @@
   flex-direction: column;
 }
 
-.course-list > div.container div.col > div:first-child {
-  cursor: pointer;
-}
-
 .course-list > div.container div.col:last-child > div:first-child {
   height: 86.5%;
   display: flex;
