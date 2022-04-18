@@ -321,7 +321,7 @@ function saveTrip() {
     tripData.tripTitle = document.getElementById("tripTitle").value;
     console.log(tripData);
 
-    localStorage.setItem("tripData", JSON.stringify(tripData));
+    localStorage.setItem("trip_" + Date.now(), JSON.stringify(tripData));
 
     location.href = "/pages/list.html";
   } else {

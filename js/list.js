@@ -1,22 +1,25 @@
 $(function() {
-  const tripData = JSON.parse(localStorage.getItem("tripData"));
-  console.log(tripData);
+  for (i = 0; i < localStorage.length; i++) {
+    tripKey = localStorage.key(i);
 
-  let html = '<div class="col">';
-  html      += '  <div>';
-  html      += `    <img src="${tripData.tripSchedule[0].placePhoto}" alt="course1">`;
-  html      += '  </div>';
-  html      += '  <div>';
-  html      += '    <p class="text-ellipsis pt-2 pb-1">';
-  html      += `      <i class="fa-solid fa-location-dot"></i>${tripData.tripTitle}`;
-  html      += '    </p>';
-  html      += '    <p class="py-1">';
-  html      += `      <i class="fa-solid fa-pencil"></i>${tripData.author}`;
-  html      += '    </p>';
-  html      += '  </div>';
-  html      += '</div>';
+    const tripData = JSON.parse(localStorage.getItem(tripKey));
 
-  $(".course-list-data").append(html);
+    let html = '<div class="col">';
+    html      += '  <div style="max-height: 240px">';
+    html      += `    <img src="${tripData.tripSchedule[0].placePhoto}" alt="course1" style="object-fit: cover;">`;
+    html      += '  </div>';
+    html      += '  <div>';
+    html      += '    <p class="text-ellipsis pt-2 pb-1">';
+    html      += `      <i class="fa-solid fa-location-dot"></i>${tripData.tripTitle}`;
+    html      += '    </p>';
+    html      += '    <p class="py-1">';
+    html      += `      <i class="fa-solid fa-pencil"></i>${tripData.author}`;
+    html      += '    </p>';
+    html      += '  </div>';
+    html      += '</div>';
+  
+    $(".course-list-data").append(html);
+  }
   
   // <div class="col">
   //   <div>
