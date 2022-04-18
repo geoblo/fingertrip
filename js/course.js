@@ -34,6 +34,7 @@ let tripData = {
     //   placeAddr: '',
     //   placeRating: '',
     //   placePhoto: '',
+    //   placeMemo: '',
     // }
   ],
   mapInfo: [
@@ -236,7 +237,15 @@ function addPlace() {
       placeAddr: placeAddrEl.value,
       placeRating: $rateYo.rateYo("rating"),
       placePhoto: placePhotoEl.getAttribute("src"),
+      placeMemo: $("#placeMemo").val(),
     });
+
+    // input 초기화
+    // placeNmEl.value = "";
+    // placeAddrEl.value = "";
+    // $rateYo.rateYo("rating", 0);
+    // placePhotoEl.setAttribute("src", "https://svgshare.com/i/AY2.svg");
+    $("#placeMemo").val("");
   } else {
     alert("가고싶은 여행지를 먼저 선택하세요~ !" + "(\'(\")\')!");
   }
@@ -321,7 +330,7 @@ function saveTrip() {
     tripData.tripTitle = document.getElementById("tripTitle").value;
     console.log(tripData);
 
-    localStorage.setItem("trip_" + Date.now(), JSON.stringify(tripData));
+    localStorage.setItem(Date.now() + "_tripdata", JSON.stringify(tripData));
 
     location.href = "/pages/list.html";
   } else {

@@ -5,7 +5,7 @@ $(function() {
     const tripData = JSON.parse(localStorage.getItem(tripKey));
 
     let html = '<div class="col">';
-    html      += '  <div style="max-height: 240px">';
+    html      += '  <div style="min-height: 240px; max-height: 240px">';
     html      += `    <img src="${tripData.tripSchedule[0].placePhoto}" alt="course1" style="object-fit: cover;">`;
     html      += '  </div>';
     html      += '  <div>';
