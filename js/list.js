@@ -6,7 +6,7 @@ $(function() {
 
     let html = '<div class="col">';
     html      += '  <div style="min-height: 240px; max-height: 240px">';
-    html      += `    <img src="${tripData.tripSchedule[0].placePhoto}" alt="course1" style="object-fit: cover;">`;
+    html      += `    <img src="${tripData.tripSchedule[0].placePhoto}" alt="course1" style="object-fit: fill;">`;
     html      += '  </div>';
     html      += '  <div>';
     html      += '    <p class="text-ellipsis pt-2 pb-1">';
