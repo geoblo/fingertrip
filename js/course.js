@@ -163,7 +163,7 @@ function getPlaceInformation(request) {
       placeNmEl.value = place.name;
       placeAddrEl.value = place.formatted_address;
       $rateYo.rateYo("rating", place.rating || 0);
-      placePhotoEl.setAttribute("src", place.photos && place.photos[0].getUrl() || "https://svgshare.com/i/AY2.svg");
+      placePhotoEl.setAttribute("src", place.photos && place.photos[0].getUrl() || "../img/no-data.svg");
 
       // path 배열 만들기
       // path.push({
@@ -191,7 +191,7 @@ function getAddressInformation(request) {
         placeNmEl.value = "정보 없음";
         placeAddrEl.value = results[0].formatted_address;
         $rateYo.rateYo("rating", 0);
-        placePhotoEl.setAttribute("src", "https://svgshare.com/i/AY2.svg");
+        placePhotoEl.setAttribute("src", "../img/no-data.svg");
       } else {
         window.alert('No results found');
       }
@@ -202,7 +202,7 @@ function getAddressInformation(request) {
       placeNmEl.value = "정보 없음";
       placeAddrEl.value = "정보 없음";
       $rateYo.rateYo("rating", 0);
-      placePhotoEl.setAttribute("src", "https://svgshare.com/i/AY2.svg");
+      placePhotoEl.setAttribute("src", "../img/no-data.svg");
     }
   });
 }
@@ -244,7 +244,7 @@ function addPlace() {
     // placeNmEl.value = "";
     // placeAddrEl.value = "";
     // $rateYo.rateYo("rating", 0);
-    // placePhotoEl.setAttribute("src", "https://svgshare.com/i/AY2.svg");
+    // placePhotoEl.setAttribute("src", "../img/no-data.svg");
     $("#placeMemo").val("");
   } else {
     alert("가고싶은 여행지를 먼저 선택하세요~ !" + "(\'(\")\')!");
