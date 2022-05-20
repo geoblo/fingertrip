@@ -353,7 +353,7 @@ function saveTrip() {
 
     localStorage.setItem(Date.now() + "_tripdata", JSON.stringify(tripData));
 
-    location.href = "/pages/list.html";
+    location.href = "/fingertrip/pages/list.html";
   } else {
     alert("Sorry! No Web Storage support..");
   }
@@ -363,6 +363,6 @@ function cancelTrip() {
   let result = confirm("작성한 내용이 전부 날라갑니다. 그래도 나가시겠습니까?");
 
   if (result) {
-    location.href = "/pages/list.html";
+    location.href = "/fingertrip/pages/list.html";
   }
 }
