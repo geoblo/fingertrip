@@ -39,6 +39,6 @@ $(function() {
 
   // Let's Finger 버튼 클릭 이벤트
   $('.btn-new-course').click(() => {
-    location.href = "/pages/course.html";
+    location.href = "/fingertrip/pages/course.html";
   });
 });
